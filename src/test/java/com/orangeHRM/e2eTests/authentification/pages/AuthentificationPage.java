@@ -1,4 +1,4 @@
-package com.orangeHRM.e2eTests.pageObject;
+package com.orangeHRM.e2eTests.authentification.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,12 +23,12 @@ public class AuthentificationPage {
 	public static WebElement messageWelcome;
 
 	/* Methods */
-	public void fillUserName() {
-		userName.sendKeys("Admin");
+	public void fillUserName(String name) {
+		userName.sendKeys(name);
 	}
 
-	public void fillPassword() {
-		userPassword.sendKeys("admin123");
+	public void fillPassword(String password) {
+		userPassword.sendKeys(password);
 	}
 
 	public void clickButtonLogin() {

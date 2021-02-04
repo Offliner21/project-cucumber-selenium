@@ -21,11 +21,11 @@ public class CommonMethods {
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,400)", "");
 	}
 
-	public void openApplicationWithConfigFile() throws IOException {
+	public void openApplicationWithConfigFile(String url) throws IOException {
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream("src/test/resources/configs/config.properties");
 		prop.load(fis);
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty(url));
 	}
 
 }
