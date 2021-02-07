@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.orangeHRM.e2eTests.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.955 s <<< FAILURE! - in com.orangeHRM.e2eTests.TestRunner
+com.orangeHRM.e2eTests.TestRunner  Time elapsed: 1.463 s  <<< ERROR!
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at com.orangeHRM.e2eTests.TestRunner.writeExtentReport(TestRunner.java:30)
+

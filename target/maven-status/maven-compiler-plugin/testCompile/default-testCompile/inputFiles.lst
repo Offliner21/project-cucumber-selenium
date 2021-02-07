@@ -1,0 +1,17 @@
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/DriverManager.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/background/pages/BackgroundPage.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/DriverManagerFactory.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/CommonMethods.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/DriverType.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/authentification/pages/AuthentificationPage.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/FirefoxDriverManager.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/AbstractPage.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/TestRunner.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/ChromeDriverManager.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/Setup.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/authentification/stepDefinitions/AuthentificationStepDefinition.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/authentification_outline/stepDefinitions/AuthentificationOutlineStepDefinitions.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/authentification_outline/pages/AuthentificationOutlinePage.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/background/stepDefinitions/BackgroundStepDefinition.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/InternetExplorerDriver.java
+/home/offliner/Documents/The Fulcrum/framework-cucumber-selenium/src/test/java/com/orangeHRM/e2eTests/utils/EdgeDriverManager.java
