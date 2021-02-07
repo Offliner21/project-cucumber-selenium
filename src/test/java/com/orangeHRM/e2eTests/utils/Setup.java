@@ -21,6 +21,7 @@ public class Setup {
 	 */
 	public static void setup() {
 		 driver = new ChromeDriver();
+		 driver.manage().window().maximize();
 
 //		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
 //		driver = driverManager.getDriver();
