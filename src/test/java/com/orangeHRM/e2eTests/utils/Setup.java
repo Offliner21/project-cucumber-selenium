@@ -5,6 +5,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -13,6 +14,7 @@ import cucumber.api.java.Before;
 public class Setup {
 
 	public static WebDriver driver;
+	public static Actions action;
 	static DriverManager driverManager;
 
 	@Before
@@ -22,6 +24,8 @@ public class Setup {
 	public static void setup() {
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
+		 action = new Actions(driver);
+
 
 //		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
 //		driver = driverManager.getDriver();
