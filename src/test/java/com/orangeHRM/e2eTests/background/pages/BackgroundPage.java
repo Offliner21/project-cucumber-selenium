@@ -6,25 +6,22 @@ import org.openqa.selenium.support.How;
 
 public class BackgroundPage {
 
-/*Locators*/
-final static String BUZZ_ID = "menu_buzz_viewBuzz";
-final static String RECRUITEMENT_ID = "menu_recruitment_viewRecruitmentModule";
+	/* Locators */
+	final static String BUZZ_ID = "menu_buzz_viewBuzz";
+	final static String RECRUITEMENT_ID = "menu_recruitment_viewRecruitmentModule";
 
-/*FindBy*/
-@FindBy(how = How.ID, using = BUZZ_ID)
-public static WebElement buzz_module;
-@FindBy(how = How.ID, using = RECRUITEMENT_ID)
-public static WebElement recruitement_module;
+	/* FindBy */
+	@FindBy(how = How.ID, using = BUZZ_ID)
+	public static WebElement buzz_module;
+	@FindBy(how = How.ID, using = RECRUITEMENT_ID)
+	public static WebElement recruitement_module;
 
-/*Methods*/
-public void clickBuzzModule() {
-buzz_module.click();
-}
+	/* Methods */
+	public void clickBuzzModule() {
+		buzz_module.click();
+	}
 
-public void clickRecruitementModule() {
-recruitement_module.click();
-}
-
-
-
+	public void clickRecruitementModule() {
+		recruitement_module.click();
+	}
 }

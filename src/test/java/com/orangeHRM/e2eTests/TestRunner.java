@@ -16,8 +16,8 @@ import cucumber.api.junit.Cucumber;
 		// glue = {"src/test/java/com/orangeHRM/e2eTests/stepDefinitions"},
 		plugin = { "pretty", "html:target/cucumber-html-report",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/OrangeHRM.html",
-				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, tags = { ("@connexion") },
-		// tags = {("@outline, @cnx")}, run multiple feature
+				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, tags = { ("@checkboxandradio") },
+		//tags = {("@outline, @cnx")}, run multiple feature
 		// tags = {("")}, run all features
 		monochrome = true
 
@@ -26,7 +26,7 @@ public class TestRunner {
 
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File("/src/test/resources/configs/extent-config.xml"));
+		Reporter.loadXMLConfig(new File("src/test/resources/configs/extent-config.xml"));
 	}
 
 }
