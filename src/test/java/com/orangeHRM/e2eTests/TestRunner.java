@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 		// glue = {"src/test/java/com/orangeHRM/e2eTests/stepDefinitions"},
 		plugin = { "pretty", "html:target/cucumber-html-report",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/OrangeHRM.html",
-				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, tags = { ("@checkboxandradio") },
+				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, tags = { ("@draganddrop") },
 		//tags = {("@outline, @cnx")}, run multiple feature
 		// tags = {("")}, run all features
 		monochrome = true

@@ -15,41 +15,30 @@ public class AlertDemoStepDefinition extends CommonMethods {
 	public WebDriver driver;
 	private AlertDemoPage alertDemopage = new AlertDemoPage();
 	private CommonMethods commonMethods = new CommonMethods();
-	
+
 	public AlertDemoStepDefinition() {
 		driver = Setup.driver;
 	}
-	
 
-@Given("^That I connect to the QAtools website alert page$")
-public void thatIConnectToTheQAtoolsWebsiteAlertPage() throws Throwable {
-	PageFactory.initElements(driver, alertDemopage);
-   commonMethods.openApplicationWithConfigFile("url-alert-demo");
-   
-}
+	@Given("^That I connect to the QAtools website alert page$")
+	public void thatIConnectToTheQAtoolsWebsiteAlertPage() throws Throwable {
+		PageFactory.initElements(driver, alertDemopage);
+		commonMethods.openApplicationWithConfigFile("url-alert-demo");
 
-@When("^I click on the first Click me blue button$")
-public void iClickOnTheFirstClickMeBlueButton() throws Throwable {
-    alertDemopage.clickAlert();
-}
+	}
 
-//@Then("^An alert window appears$")
-//public void anAlertWindowAppears() throws Throwable {
-//   
-//}
+	@When("^I click on the first Click me blue button$")
+	public void iClickOnTheFirstClickMeBlueButton() throws Throwable {
+		alertDemopage.clickAlert();
+	}
 
-@When("^I accept the alert$")
-public void iAcceptTheAlert() throws Throwable {
-   alertDemopage.acceptAlert();
-}
+	@When("^I accept the alert$")
+	public void iAcceptTheAlert() throws Throwable {
+		alertDemopage.acceptAlert();
+	}
 
-@Then("^The title of the page is displayed in the console$")
-public void theTitleOfThePageIsDisplayedInTheConsole() throws Throwable {
-   alertDemopage.getTitle();
-}
-
-//@Then("^The alert window disappears$")
-//public void theAlertWindowDisappears() throws Throwable {
-//   
-//}
+	@Then("^The title of the page is displayed in the console$")
+	public void theTitleOfThePageIsDisplayedInTheConsole() throws Throwable {
+		alertDemopage.getTitle();
+	}
 }

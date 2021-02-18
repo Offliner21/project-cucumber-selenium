@@ -1,97 +1,73 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("checkbox_radiobutton/checkbox_radiobutton.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("drag_and_drop/drag.feature");
 formatter.feature({
   "line": 2,
-  "name": "Check box test and radio button",
+  "name": "Drag and Drop",
   "description": "I want to use this template for my feature file",
-  "id": "check-box-test-and-radio-button",
+  "id": "drag-and-drop",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@checkboxandradio"
+      "name": "@draganddrop"
     }
   ]
 });
 formatter.before({
-  "duration": 1935803874,
+  "duration": 3124949969,
   "status": "passed"
 });
 formatter.scenario({
   "line": 6,
-  "name": "Click on the hobbies checkbox and the gender radio button",
+  "name": "drag one element to another",
   "description": "",
-  "id": "check-box-test-and-radio-button;click-on-the-hobbies-checkbox-and-the-gender-radio-button",
+  "id": "drag-and-drop;drag-one-element-to-another",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 5,
-      "name": "@check"
+      "name": "@drag"
     }
   ]
 });
 formatter.step({
   "line": 7,
-  "name": "I connect to the QAtools website check box and radio buttons page",
+  "name": "That I connect to the demoqa application",
   "keyword": "Given "
 });
 formatter.step({
   "line": 8,
-  "name": "I click on the check box sports",
+  "name": "I drag the webelement dragme",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "I select the radio button male",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "The checkbox is checked",
+  "name": "The webelement drag me is now over the webelement drag here",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 11,
-  "name": "The radio button is selected",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "CheckBoxAndRadioBoxStepDefinitions.iConnectToTheQAtoolsWebsiteCheckBoxAndRadioButtonsPage()"
+  "location": "DragAndDropStepDefinition.thatIConnectToTheDemoqaApplication()"
 });
 formatter.result({
-  "duration": 2813474714,
+  "duration": 2939458044,
   "status": "passed"
 });
 formatter.match({
-  "location": "CheckBoxAndRadioBoxStepDefinitions.iClickOnTheCheckBoxSports()"
+  "location": "DragAndDropStepDefinition.iDragTheWebelementDragme()"
 });
 formatter.result({
-  "duration": 702190,
-  "error_message": "java.lang.NullPointerException\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\n\tat com.orangeHRM.e2eTests.checkBoxAndRadioButton.pages.CheckBoxAndRadioBoxPage.checkBox(CheckBoxAndRadioBoxPage.java:23)\n\tat com.orangeHRM.e2eTests.checkBoxAndRadioButton.stepDefinitions.CheckBoxAndRadioBoxStepDefinitions.iClickOnTheCheckBoxSports(CheckBoxAndRadioBoxStepDefinitions.java:26)\n\tat ✽.When I click on the check box sports(checkbox_radiobutton/checkbox_radiobutton.feature:8)\n",
-  "status": "failed"
+  "duration": 339963888,
+  "status": "passed"
 });
 formatter.match({
-  "location": "CheckBoxAndRadioBoxStepDefinitions.iSelectTheRadioButtonMale()"
+  "location": "DragAndDropStepDefinition.theWebelementDragMeIsNowOverTheWebelementDragHere()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 38191117,
+  "status": "passed"
 });
-formatter.match({
-  "location": "CheckBoxAndRadioBoxStepDefinitions.theCheckboxIsChecked()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CheckBoxAndRadioBoxStepDefinitions.theRadioButtonIsSelected()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.write("Current page url is https://demoqa.com/automation-practice-form");
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 702067444,
+  "duration": 1328082733,
   "status": "passed"
 });
 });
