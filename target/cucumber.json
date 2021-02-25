@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3124949969,
+              "duration": 5853830661,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 6,
-        "name": "drag one element to another",
+        "name": "Add a new employee profile to the HR application",
         "description": "",
-        "id": "drag-and-drop;drag-one-element-to-another",
+        "id": "add-a-new-employee;add-a-new-employee-profile-to-the-hr-application",
         "after": [
           {
             "result": {
-              "duration": 1328082733,
+              "duration": 271376170,
               "status": "passed"
             },
             "match": {
@@ -34,58 +34,157 @@
         "steps": [
           {
             "result": {
-              "duration": 2939458044,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "That I connect to the demoqa application",
-            "match": {
-              "location": "DragAndDropStepDefinition.thatIConnectToTheDemoqaApplication()"
-            },
+            "name": "I open the OrangeHRM application",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 339963888,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "I drag the webelement dragme",
-            "match": {
-              "location": "DragAndDropStepDefinition.iDragTheWebelementDragme()"
-            },
+            "name": "I click on the PIM Module",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 38191117,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
-            "name": "The webelement drag me is now over the webelement drag here",
-            "match": {
-              "location": "DragAndDropStepDefinition.theWebelementDragMeIsNowOverTheWebelementDragHere()"
+            "name": "I go to Add Employee",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 10,
+            "name": "I add the first name \u003cJohn\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I add the middle name \u003cwalker\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I add the lastname \u003cDoe\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I add an employee ID \u003c8889\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I add a photograph",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I click on create login details checkbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I create an employee username \u003cJohn889\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I create an employee password \u003cJohn889J!#\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I confirm the employee password \u003cJohn889J!#\u003e",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "I choose the status Enabled",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I click on the button save",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "The employee profile is created",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 5,
-            "name": "@drag"
+            "name": "@addprofile"
           }
         ]
       }
     ],
-    "name": "Drag and Drop",
+    "name": "Add a new employee",
     "description": "I want to use this template for my feature file",
-    "id": "drag-and-drop",
+    "id": "add-a-new-employee",
     "keyword": "Feature",
-    "uri": "drag_and_drop/drag.feature",
+    "uri": "pmi_module/Addnewemployee.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@draganddrop"
+        "name": "@add"
       }
     ]
   }

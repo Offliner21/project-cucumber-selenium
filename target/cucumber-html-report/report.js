@@ -1,73 +1,172 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("drag_and_drop/drag.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("pmi_module/Addnewemployee.feature");
 formatter.feature({
   "line": 2,
-  "name": "Drag and Drop",
+  "name": "Add a new employee",
   "description": "I want to use this template for my feature file",
-  "id": "drag-and-drop",
+  "id": "add-a-new-employee",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@draganddrop"
+      "name": "@add"
     }
   ]
 });
 formatter.before({
-  "duration": 3124949969,
+  "duration": 5853830661,
   "status": "passed"
 });
 formatter.scenario({
   "line": 6,
-  "name": "drag one element to another",
+  "name": "Add a new employee profile to the HR application",
   "description": "",
-  "id": "drag-and-drop;drag-one-element-to-another",
+  "id": "add-a-new-employee;add-a-new-employee-profile-to-the-hr-application",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 5,
-      "name": "@drag"
+      "name": "@addprofile"
     }
   ]
 });
 formatter.step({
   "line": 7,
-  "name": "That I connect to the demoqa application",
+  "name": "I open the OrangeHRM application",
   "keyword": "Given "
 });
 formatter.step({
   "line": 8,
-  "name": "I drag the webelement dragme",
+  "name": "I click on the PIM Module",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "The webelement drag me is now over the webelement drag here",
+  "name": "I go to Add Employee",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I add the first name \u003cJohn\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I add the middle name \u003cwalker\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I add the lastname \u003cDoe\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I add an employee ID \u003c8889\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "I add a photograph",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "I click on create login details checkbox",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I create an employee username \u003cJohn889\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "I create an employee password \u003cJohn889J!#\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "I confirm the employee password \u003cJohn889J!#\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "I choose the status Enabled",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "I click on the button save",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "The employee profile is created",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "DragAndDropStepDefinition.thatIConnectToTheDemoqaApplication()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 2939458044,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "DragAndDropStepDefinition.iDragTheWebelementDragme()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 339963888,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "DragAndDropStepDefinition.theWebelementDragMeIsNowOverTheWebelementDragHere()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 38191117,
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
-  "duration": 1328082733,
+  "duration": 271376170,
   "status": "passed"
 });
 });
