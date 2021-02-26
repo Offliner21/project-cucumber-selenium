@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5853830661,
+              "duration": 6288156685,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 271376170,
+              "duration": 86975968,
               "status": "passed"
             },
             "match": {
@@ -34,137 +34,272 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 6155811162,
+              "status": "passed"
             },
             "line": 7,
             "name": "I open the OrangeHRM application",
-            "match": {},
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iOpenTheOrangeHRMApplication()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 148472891,
+              "status": "passed"
             },
             "line": 8,
-            "name": "I click on the PIM Module",
-            "match": {},
+            "name": "I enter the Admin username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 28
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iEnterTheAdminUsername(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 109597968,
+              "status": "passed"
             },
             "line": 9,
-            "name": "I go to Add Employee",
-            "match": {},
+            "name": "I enter the admin password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 28
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iEnterTheAdminPassword(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 4532048385,
+              "status": "passed"
             },
             "line": 10,
-            "name": "I add the first name \u003cJohn\u003e",
-            "match": {},
+            "name": "I click on the login button",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iClickOnTheLoginButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2512724739,
+              "status": "passed"
             },
             "line": 11,
-            "name": "I add the middle name \u003cwalker\u003e",
-            "match": {},
+            "name": "I click on the PIM Module",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iClickOnThePIMModule()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 100726,
+              "status": "passed"
             },
             "line": 12,
-            "name": "I add the lastname \u003cDoe\u003e",
-            "match": {},
+            "name": "I go to Add Employee",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iGoToAddEmployee()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 297835,
+              "status": "passed"
             },
             "line": 13,
-            "name": "I add an employee ID \u003c8889\u003e",
-            "match": {},
+            "name": "I add the first name \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 22
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iAddTheFirstName(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 381513,
+              "status": "passed"
             },
             "line": 14,
-            "name": "I add a photograph",
-            "match": {},
+            "name": "I add the middle name \"walker\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "walker",
+                  "offset": 23
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iAddTheMiddleName(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 199046,
+              "status": "passed"
             },
             "line": 15,
-            "name": "I click on create login details checkbox",
-            "match": {},
+            "name": "I add the lastname \"Doe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Doe",
+                  "offset": 20
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iAddTheLastname(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 200112,
+              "status": "passed"
             },
             "line": 16,
-            "name": "I create an employee username \u003cJohn889\u003e",
-            "match": {},
+            "name": "I add an employee ID \"8889\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8889",
+                  "offset": 22
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iAddAnEmployeeID(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 72018,
+              "status": "passed"
             },
             "line": 17,
-            "name": "I create an employee password \u003cJohn889J!#\u003e",
-            "match": {},
+            "name": "I select a photograph",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iSelectAPhotograph()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 62577,
+              "status": "passed"
             },
             "line": 18,
-            "name": "I confirm the employee password \u003cJohn889J!#\u003e",
-            "match": {},
+            "name": "I click on create login details",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iClickOnCreateLoginDetails()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 813058,
+              "status": "passed"
             },
             "line": 19,
-            "name": "I choose the status Enabled",
-            "match": {},
+            "name": "I create an employee username \"John889",
+            "match": {
+              "arguments": [
+                {
+                  "val": "889",
+                  "offset": 35
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeeUsernameJohn(int)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 119454,
+              "status": "passed"
             },
             "line": 20,
-            "name": "I click on the button save",
-            "match": {},
+            "name": "I create an employee password \"John889J!#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John889J!#",
+                  "offset": 31
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeePassword(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 144731,
+              "status": "passed"
             },
             "line": 21,
+            "name": "I confirm the employee password \"John889J!#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John889J!#",
+                  "offset": 33
+                }
+              ],
+              "location": "AddNewEmployeeStepDefinition.iConfirmTheEmployeePassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57482,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I choose the status Enabled",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iChooseTheStatusEnabled()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39903,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the button save",
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.iClickOnTheButtonSave()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44214,
+              "status": "passed"
+            },
+            "line": 24,
             "name": "The employee profile is created",
-            "match": {},
+            "match": {
+              "location": "AddNewEmployeeStepDefinition.theEmployeeProfileIsCreated()"
+            },
             "keyword": "Then "
           }
         ],

@@ -57,4 +57,9 @@ public class CommonMethods {
 		actions.dragAndDrop(from, to).perform();
 	}
 
+	public void fillForm(WebElement element, String text) {
+		WebElement fill = element;
+		fill.sendKeys(text);
+	}
+
 }

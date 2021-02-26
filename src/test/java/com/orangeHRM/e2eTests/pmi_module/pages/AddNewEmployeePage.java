@@ -5,9 +5,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class AddNewEmployeePage {
-	
-	/*Locators*/
-	final static String PIM_ID = "menu_pim_viewPimModule";
+
+	/* Locators */
+	final static String ADMIN_ID = "txtUsername";
+	final static String PASSWORD_ID = "txtPassword";
+	final static String LOGINBTN_ID = "btnLogin";
+	final static String PIM_XPATH = "//b[contains(text(),'PIM')]";
 	final static String PIMADDEMPLOYEE_ID = "menu_pim_addEmployee";
 	final static String FIRSTNAME_ID = "firstName";
 	final static String MIDDLENAME_ID = "middleName";
@@ -20,12 +23,18 @@ public class AddNewEmployeePage {
 	final static String CONFIRMPASSWORD_ID = "re_password";
 	final static String STATUS_ID = "status";
 	final static String SAVEBUTTON_ID = "btnSave";
-	
-	/*FindBy*/
-	@FindBy(how = How.ID, using = PIM_ID)
+
+	/* FindBy */
+	@FindBy(how = How.ID, using = ADMIN_ID)
+	public static WebElement admin;
+	@FindBy(how = How.ID, using = PASSWORD_ID)
+	public static WebElement pass;
+	@FindBy(how = How.ID, using = LOGINBTN_ID)
+	public static WebElement login;
+	@FindBy(how = How.XPATH, using = PIM_XPATH)
 	public static WebElement pimModule;
 	@FindBy(how = How.ID, using = PIMADDEMPLOYEE_ID)
-    public static WebElement addEmployee;
+	public static WebElement addEmployee;
 	@FindBy(how = How.ID, using = FIRSTNAME_ID)
 	public static WebElement firstName;
 	@FindBy(how = How.ID, using = MIDDLENAME_ID)
@@ -48,8 +57,30 @@ public class AddNewEmployeePage {
 	public static WebElement status;
 	@FindBy(how = How.ID, using = SAVEBUTTON_ID)
 	public static WebElement saveButton;
-	
-	
-	
+
+	/* Methods */
+	public void pmiClick() {
+		pimModule.click();
+	}
+
+	public void addEmployeeClick() {
+		addEmployee.click();
+	}
+
+	public void loginClick() {
+		login.click();
+	}
+
+	public void addPhotograh() {
+
+	}
+
+	public void checkLoginClick() {
+		checkLogin.click();
+	}
+
+	public void saveButtonClick() {
+		saveButton.click();
+	}
 
 }

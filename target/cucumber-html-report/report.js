@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5853830661,
+  "duration": 6288156685,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,136 +37,271 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "I click on the PIM Module",
+  "name": "I enter the Admin username \"Admin\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "I go to Add Employee",
+  "name": "I enter the admin password \"admin123\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "I add the first name \u003cJohn\u003e",
+  "name": "I click on the login button",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "I add the middle name \u003cwalker\u003e",
+  "name": "I click on the PIM Module",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "I add the lastname \u003cDoe\u003e",
+  "name": "I go to Add Employee",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "I add an employee ID \u003c8889\u003e",
+  "name": "I add the first name \"John\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "I add a photograph",
+  "name": "I add the middle name \"walker\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "I click on create login details checkbox",
+  "name": "I add the lastname \"Doe\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 16,
-  "name": "I create an employee username \u003cJohn889\u003e",
+  "name": "I add an employee ID \"8889\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 17,
-  "name": "I create an employee password \u003cJohn889J!#\u003e",
+  "name": "I select a photograph",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "I confirm the employee password \u003cJohn889J!#\u003e",
+  "name": "I click on create login details",
   "keyword": "And "
 });
 formatter.step({
   "line": 19,
-  "name": "I choose the status Enabled",
+  "name": "I create an employee username \"John889",
   "keyword": "And "
 });
 formatter.step({
   "line": 20,
-  "name": "I click on the button save",
+  "name": "I create an employee password \"John889J!#\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
+  "name": "I confirm the employee password \"John889J!#\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "I choose the status Enabled",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I click on the button save",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
   "name": "The employee profile is created",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iOpenTheOrangeHRMApplication()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 6155811162,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "Admin",
+      "offset": 28
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iEnterTheAdminUsername(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 148472891,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin123",
+      "offset": 28
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iEnterTheAdminPassword(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 109597968,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iClickOnTheLoginButton()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 4532048385,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iClickOnThePIMModule()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 2512724739,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iGoToAddEmployee()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 100726,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "John",
+      "offset": 22
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iAddTheFirstName(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 297835,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "walker",
+      "offset": 23
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iAddTheMiddleName(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 381513,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Doe",
+      "offset": 20
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iAddTheLastname(String)"
+});
+formatter.result({
+  "duration": 199046,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "8889",
+      "offset": 22
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iAddAnEmployeeID(String)"
+});
+formatter.result({
+  "duration": 200112,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iSelectAPhotograph()"
+});
+formatter.result({
+  "duration": 72018,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iClickOnCreateLoginDetails()"
+});
+formatter.result({
+  "duration": 62577,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "889",
+      "offset": 35
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeeUsernameJohn(int)"
+});
+formatter.result({
+  "duration": 813058,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "John889J!#",
+      "offset": 31
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeePassword(String)"
+});
+formatter.result({
+  "duration": 119454,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "John889J!#",
+      "offset": 33
+    }
+  ],
+  "location": "AddNewEmployeeStepDefinition.iConfirmTheEmployeePassword(String)"
+});
+formatter.result({
+  "duration": 144731,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iChooseTheStatusEnabled()"
+});
+formatter.result({
+  "duration": 57482,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.iClickOnTheButtonSave()"
+});
+formatter.result({
+  "duration": 39903,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddNewEmployeeStepDefinition.theEmployeeProfileIsCreated()"
+});
+formatter.result({
+  "duration": 44214,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 271376170,
+  "duration": 86975968,
   "status": "passed"
 });
 });

@@ -1,5 +1,7 @@
 package com.orangeHRM.e2eTests.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +27,8 @@ public class Setup {
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
 		 action = new Actions(driver);
+	   driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+
 
 
 //		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);

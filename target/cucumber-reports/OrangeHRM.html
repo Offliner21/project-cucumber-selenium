@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 25, 2021 08:04:26 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 26, 2021 06:59:25 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,7 +77,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -139,10 +139,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +154,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +169,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>15</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -186,141 +186,165 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Add a new employee</span>
-						<span class='test-time'>Feb 25, 2021 08:04:26 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-time'>Feb 26, 2021 06:59:26 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='skip'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@addprofile</span>
 	</div>
-	<span class='duration right label'>0h 0m 6s+251ms</span>
+	<span class='duration right label'>0h 0m 20s+387ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Add a new employee profile to the HR application</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given skip' status='skip'>
+		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given I open the OrangeHRM application</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node when skip' status='skip'>
+		<li test-id='4' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When I click on the PIM Module</span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">When I enter the Admin username "Admin"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='5' class='node and skip' status='skip'>
+		<li test-id='5' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I enter the admin password "admin123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on the login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on the PIM Module</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And I go to Add Employee</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node and skip' status='skip'>
+		<li test-id='9' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I add the first name <John></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I add the first name "John"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node and skip' status='skip'>
+		<li test-id='10' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I add the middle name <walker></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I add the middle name "walker"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node and skip' status='skip'>
+		<li test-id='11' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I add the lastname <Doe></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I add the lastname "Doe"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node and skip' status='skip'>
+		<li test-id='12' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I add an employee ID <8889></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I add an employee ID "8889"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='10' class='node and skip' status='skip'>
+		<li test-id='13' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I add a photograph</span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I select a photograph</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='11' class='node and skip' status='skip'>
+		<li test-id='14' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I click on create login details checkbox</span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I click on create login details</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node and skip' status='skip'>
+		<li test-id='15' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I create an employee username <John889></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I create an employee username "John889</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='13' class='node and skip' status='skip'>
+		<li test-id='16' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I create an employee password <John889J!#></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I create an employee password "John889J!#"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='14' class='node and skip' status='skip'>
+		<li test-id='17' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And I confirm the employee password <John889J!#></span>
-				<div class='pre'>undefined</div>
+			<span class="bdd-step-name">And I confirm the employee password "John889J!#"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='15' class='node and skip' status='skip'>
+		<li test-id='18' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And I choose the status Enabled</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node and skip' status='skip'>
+		<li test-id='19' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And I click on the button save</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='17' class='node then skip' status='skip'>
+		<li test-id='20' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then The employee profile is created</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -381,14 +405,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@add</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -402,9 +426,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 25, 2021 08:04:26 PM</td>
+										<td>Feb 26, 2021 06:59:26 PM</td>
 										<td class='linked' test-id='1'>Add a new employee</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -415,14 +439,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@addprofile</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -436,9 +460,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 25, 2021 08:04:26 PM</td>
+										<td>Feb 26, 2021 06:59:26 PM</td>
 										<td class='linked' test-id='2'>Add a new employee.Add a new employee profile to the HR application</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -478,25 +502,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>15</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 25, 2021 08:04:26 PM</div>
+					<div class='panel-lead'>Feb 26, 2021 06:59:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 25, 2021 08:04:33 PM</div>
+			 		<div class='panel-lead'>Feb 26, 2021 06:59:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 7s+36ms</div>
+					<div class='panel-lead'>0h 0m 20s+938ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -513,20 +537,20 @@
 						</tr>
 						<tr>
 							<td>@add</td>
-							<td>0</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@addprofile</td>
-							<td>0</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -542,31 +566,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
-				exceptionsParent: 1,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 0,
+				passGrandChild: 18,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 15,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 15,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		
