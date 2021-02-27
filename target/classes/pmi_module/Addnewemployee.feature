@@ -16,7 +16,7 @@ Feature: Add a new employee
     And I add an employee ID "8889"
     And I select a photograph
     And I click on create login details
-    And I create an employee username "John889
+    And I create an employee username "John889"
     And I create an employee password "John889J!#"
     And I confirm the employee password "John889J!#"
     And I choose the status Enabled

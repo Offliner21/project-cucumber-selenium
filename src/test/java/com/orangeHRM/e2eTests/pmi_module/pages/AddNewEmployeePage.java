@@ -4,7 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AddNewEmployeePage {
+import com.orangeHRM.e2eTests.utils.CommonMethods;
+
+public class AddNewEmployeePage extends CommonMethods {
+
 
 	/* Locators */
 	final static String ADMIN_ID = "txtUsername";
@@ -23,6 +26,7 @@ public class AddNewEmployeePage {
 	final static String CONFIRMPASSWORD_ID = "re_password";
 	final static String STATUS_ID = "status";
 	final static String SAVEBUTTON_ID = "btnSave";
+	final static String DETAILS_XPATH = "//h1[contains(text(),'Personal Details')]";
 
 	/* FindBy */
 	@FindBy(how = How.ID, using = ADMIN_ID)
@@ -36,7 +40,7 @@ public class AddNewEmployeePage {
 	@FindBy(how = How.ID, using = PIMADDEMPLOYEE_ID)
 	public static WebElement addEmployee;
 	@FindBy(how = How.ID, using = FIRSTNAME_ID)
-	public static WebElement firstName;
+	public static WebElement firstNam;
 	@FindBy(how = How.ID, using = MIDDLENAME_ID)
 	public static WebElement middleName;
 	@FindBy(how = How.ID, using = FAMILYNAME_ID)
@@ -57,10 +61,14 @@ public class AddNewEmployeePage {
 	public static WebElement status;
 	@FindBy(how = How.ID, using = SAVEBUTTON_ID)
 	public static WebElement saveButton;
+	@FindBy(how = How.XPATH, using = DETAILS_XPATH)
+	public static WebElement detail;
 
 	/* Methods */
 	public void pmiClick() {
 		pimModule.click();
+		//click(pimModule);
+		//writeText(admin, name);
 	}
 
 	public void addEmployeeClick() {

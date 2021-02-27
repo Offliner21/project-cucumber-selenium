@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 6288156685,
+  "duration": 1712752717,
   "status": "passed"
 });
 formatter.scenario({
@@ -92,7 +92,7 @@ formatter.step({
 });
 formatter.step({
   "line": 19,
-  "name": "I create an employee username \"John889",
+  "name": "I create an employee username \"John889\"",
   "keyword": "And "
 });
 formatter.step({
@@ -124,7 +124,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iOpenTheOrangeHRMApplication()"
 });
 formatter.result({
-  "duration": 6155811162,
+  "duration": 3680067481,
   "status": "passed"
 });
 formatter.match({
@@ -137,7 +137,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iEnterTheAdminUsername(String)"
 });
 formatter.result({
-  "duration": 148472891,
+  "duration": 135472024,
   "status": "passed"
 });
 formatter.match({
@@ -150,28 +150,28 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iEnterTheAdminPassword(String)"
 });
 formatter.result({
-  "duration": 109597968,
+  "duration": 130097584,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iClickOnTheLoginButton()"
 });
 formatter.result({
-  "duration": 4532048385,
+  "duration": 2300189609,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iClickOnThePIMModule()"
 });
 formatter.result({
-  "duration": 2512724739,
+  "duration": 2839284413,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iGoToAddEmployee()"
 });
 formatter.result({
-  "duration": 100726,
+  "duration": 927663769,
   "status": "passed"
 });
 formatter.match({
@@ -184,7 +184,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iAddTheFirstName(String)"
 });
 formatter.result({
-  "duration": 297835,
+  "duration": 111287224,
   "status": "passed"
 });
 formatter.match({
@@ -197,7 +197,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iAddTheMiddleName(String)"
 });
 formatter.result({
-  "duration": 381513,
+  "duration": 111854630,
   "status": "passed"
 });
 formatter.match({
@@ -210,7 +210,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iAddTheLastname(String)"
 });
 formatter.result({
-  "duration": 199046,
+  "duration": 120948462,
   "status": "passed"
 });
 formatter.match({
@@ -223,34 +223,34 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iAddAnEmployeeID(String)"
 });
 formatter.result({
-  "duration": 200112,
+  "duration": 108393977,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iSelectAPhotograph()"
 });
 formatter.result({
-  "duration": 72018,
+  "duration": 57549920,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iClickOnCreateLoginDetails()"
 });
 formatter.result({
-  "duration": 62577,
+  "duration": 99058658,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "889",
-      "offset": 35
+      "val": "John889",
+      "offset": 31
     }
   ],
-  "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeeUsernameJohn(int)"
+  "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeeUsername(String)"
 });
 formatter.result({
-  "duration": 813058,
+  "duration": 100237502,
   "status": "passed"
 });
 formatter.match({
@@ -263,7 +263,7 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iCreateAnEmployeePassword(String)"
 });
 formatter.result({
-  "duration": 119454,
+  "duration": 139019835,
   "status": "passed"
 });
 formatter.match({
@@ -276,32 +276,32 @@ formatter.match({
   "location": "AddNewEmployeeStepDefinition.iConfirmTheEmployeePassword(String)"
 });
 formatter.result({
-  "duration": 144731,
+  "duration": 122146800,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iChooseTheStatusEnabled()"
 });
 formatter.result({
-  "duration": 57482,
+  "duration": 103141028,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.iClickOnTheButtonSave()"
 });
 formatter.result({
-  "duration": 39903,
+  "duration": 90216750,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewEmployeeStepDefinition.theEmployeeProfileIsCreated()"
 });
 formatter.result({
-  "duration": 44214,
+  "duration": 3161507381,
   "status": "passed"
 });
 formatter.after({
-  "duration": 86975968,
+  "duration": 124804342,
   "status": "passed"
 });
 });

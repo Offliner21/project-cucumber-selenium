@@ -53,8 +53,8 @@ public class AddNewEmployeeStepDefinition {
 	}
 
 	@When("^I add the first name \"([^\"]*)\"$")
-	public void iAddTheFirstName(String name) throws Throwable {
-		commondMethods.fillForm(AddNewEmployeePage.firstName, name);
+	public void iAddTheFirstName(String first) throws Throwable {
+		commondMethods.fillForm(AddNewEmployeePage.firstNam, first);
 	}
 
 	@When("^I add the middle name \"([^\"]*)\"$")
@@ -74,7 +74,7 @@ public class AddNewEmployeeStepDefinition {
 
 	@When("^I select a photograph$")
 	public void iSelectAPhotograph() throws Throwable {
-
+		commondMethods.uploadFiles(AddNewEmployeePage.photograph, "/home/offliner/Pictures/john-doe.jpeg");
 	}
 
 	@When("^I click on create login details$")
@@ -82,11 +82,10 @@ public class AddNewEmployeeStepDefinition {
 		addNewEmployeePage.checkLoginClick();
 	}
 
-	@When("^I create an employee username \"John(\\d+)$")
-	public void iCreateAnEmployeeUsernameJohn(String username) throws Throwable {
+	@When("^I create an employee username \"([^\"]*)\"$")
+	public void iCreateAnEmployeeUsername(String username) throws Throwable {
 		commondMethods.fillForm(AddNewEmployeePage.userName, username);
 	}
-
 	@When("^I create an employee password \"([^\"]*)\"$")
 	public void iCreateAnEmployeePassword(String userpassword) throws Throwable {
 		commondMethods.fillForm(AddNewEmployeePage.userPassword, userpassword);
@@ -99,17 +98,25 @@ public class AddNewEmployeeStepDefinition {
 
 	@When("^I choose the status Enabled$")
 	public void iChooseTheStatusEnabled() throws Throwable {
-
+		commondMethods.selectDropDownListByVisibleText(AddNewEmployeePage.status, "Enabled");
 	}
 
 	@When("^I click on the button save$")
 	public void iClickOnTheButtonSave() throws Throwable {
-      addNewEmployeePage.saveButtonClick();
+		addNewEmployeePage.saveButtonClick();
 	}
-
+	
 	@Then("^The employee profile is created$")
 	public void theEmployeeProfileIsCreated() throws Throwable {
-    
-	}
+		String text = AddNewEmployeePage.detail.getText();
 
+		if (text.equals("Personal Details")) {
+
+			System.out.println("Pass: The profile is created successfully");
+
+		} else {
+
+		System.out.println("Fail: Failed to create the profile");
+	}
+  }
 }

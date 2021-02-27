@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.openqa.selenium.By;
 public class CommonMethods {
 
 	public static WebDriver driver;
@@ -35,6 +35,13 @@ public class CommonMethods {
 		driver.get(prop.getProperty(url));
 	}
 
+	public void uploadFiles(WebElement choose, String link) {
+		choose.sendKeys(link);
+		//WebElement uploadFile = driver.findElement(By.id("uploadfile_0"));
+		//uploadFile.sendKeys("/home/offliner/Pictures/nopandamamic.png");
+		
+	}
+	
 	public void selectDropDownListByVisibleText(WebElement element, String text) {
 		Select dropDownList = new Select(element);
 		dropDownList.selectByVisibleText(text);
@@ -62,4 +69,30 @@ public class CommonMethods {
 		fill.sendKeys(text);
 	}
 
+	// Click Methodby usingJAVA Generic
+	public <T> void click(T elementAttr) {
+		if (elementAttr.getClass().getName().contains("By")) {
+			driver.findElement((By) elementAttr).click();
+		} else {
+			((WebElement) elementAttr).click();
+		}
+	}
+
+	// Write Text by using JAVA Generic
+	public <T> void writeText(T elementAttr, String text) {
+		if (elementAttr.getClass().getName().contains("By")) {
+			driver.findElement((By) elementAttr).sendKeys(text);
+		} else {
+			((WebElement) elementAttr).sendKeys(text);
+		}
+	}
+
+	// Read Text by using JAVA Generic
+	public <T> String readText(T elementAttr) {
+		if (elementAttr.getClass().getName().contains("By")) {
+			return driver.findElement((By) elementAttr).getText();
+		} else {
+			return ((WebElement) elementAttr).getText();
+		}
+	}
 }
