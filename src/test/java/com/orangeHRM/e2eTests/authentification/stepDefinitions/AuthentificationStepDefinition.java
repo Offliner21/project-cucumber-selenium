@@ -29,7 +29,7 @@ public class AuthentificationStepDefinition extends CommonMethods {
 	public void jeSaisieUsername(String name) throws Throwable {
 		logger.info("Je saisie Username");
 		PageFactory.initElements(driver, AuthentificationPage.class);
-		authentificationPage.fillUserName(name);
+		authentificationPage.fillUserName(name);  
 	}
 
 	@When("^Je saisie Password \"([^\"]*)\"$")
