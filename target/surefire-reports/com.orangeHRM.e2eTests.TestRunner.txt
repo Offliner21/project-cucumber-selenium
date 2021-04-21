@@ -1,8 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.orangeHRM.e2eTests.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.955 s <<< FAILURE! - in com.orangeHRM.e2eTests.TestRunner
-com.orangeHRM.e2eTests.TestRunner  Time elapsed: 1.463 s  <<< ERROR!
-java.lang.IllegalArgumentException: InputStream cannot be null
-	at com.orangeHRM.e2eTests.TestRunner.writeExtentReport(TestRunner.java:30)
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 5, Time elapsed: 2.257 s <<< FAILURE! - in com.orangeHRM.e2eTests.TestRunner
+Scenario: Authentification - OrangeHRM  Time elapsed: 0.794 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+
+Scenario: Authentification - OrangeHRM  Time elapsed: 0.933 s  <<< ERROR!
+java.lang.NullPointerException
 

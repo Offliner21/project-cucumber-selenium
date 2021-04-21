@@ -17,6 +17,7 @@ import cucumber.api.junit.Cucumber;
 		plugin = { "pretty", "html:target/cucumber-html-report",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/OrangeHRM.html",
 				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, tags = { ("@form") },
+				//in case of a single test put the hook between () in the tags
 		//tags = {("@outline, @cnx")}, run multiple feature
 		// tags = {("")}, run all features
 		monochrome = true
